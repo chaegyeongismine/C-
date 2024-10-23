@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <ctype.h> /*sexy junyeong*/
+#include <ctype.h> 
 #define MSG "\n--------------------------------\n"
 #define gyeongsook "p)pound->kg, k)kg->pound?(  ) \b\b\b\b"
 void main()
@@ -11,16 +11,16 @@ void main()
 	ch = getchar();
 	printf("%s", MSG);
 	switch (toupper(ch))
-	{	case 'P' : printf("\n ÆÄ¿îµå ÀÔ·Â : ");
+	{	case 'P' : printf("\n íŒŒìš´ë“œ ì…ë ¥ : ");
 		scanf("%d", &pound);
 		kg = pound * 0.4535;
-		printf("\n %d ÆÄ¿îµå´Â %.2lfkgÀÌ´Ù,\n\n", pound, kg);
+		printf("\n %d íŒŒìš´ë“œëŠ” %.2lfkgì´ë‹¤,\n\n", pound, kg);
 		break;
-	case 'k': printf("\n Å³·Î±×·¥ ÀÔ·Â : ");
+	case 'K': printf("\n í‚¬ë¡œê·¸ë¨ ì…ë ¥ : ");
 		scanf("%lf", &kg);
-		printf("\n%.1lfkgÀº %.1lf poundÀÌ´Ù.\n\n", kg, kg/0.4535);
+		printf("\n%.1lfkgì€ %.1lf poundì´ë‹¤.\n\n", kg, kg/0.4535);
 		break;
-	default: printf(" Àß¸øµÈ ¸í·ÉÀÔ´Ï´Ù.\n\n");
+	default: printf(" ì˜ëª»ëœ ëª…ë ¹ì…ë‹ˆë‹¤.\n\n");
 	}
 
 

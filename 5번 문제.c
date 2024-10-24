@@ -5,9 +5,9 @@ double simpson_R(int, int, int);
 void main()
 {
 int a, b, n;
-	printf("Æó±¸°£ a,b¿Í µîºĞ¼ö nÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+	printf("íêµ¬ê°„ a,bì™€ ë“±ë¶„ìˆ˜ nì„ ì…ë ¥í•˜ì„¸ìš” : ");
 	scanf("%d %d %d", &a, &b, &n);
-	printf("ÇÔ¼ö f(x)=3x+4¸¦ %d°ú(¿Í) %d »çÀÌ¿¡ ´ëÇÏ¿© ÀûºĞÇÑ °á°ú´Â %.2lfÀÔ´Ï´Ù.\n", a, b, simpson_R(a, b, n));
+	printf("í•¨ìˆ˜ f(x)=3x+4ë¥¼ %dê³¼(ì™€) %d ì‚¬ì´ì— ëŒ€í•˜ì—¬ ì ë¶„í•œ ê²°ê³¼ëŠ” %.2lfì…ë‹ˆë‹¤.\n", a, b, simpson_R(a, b, n));
 
 }
 
@@ -22,7 +22,7 @@ double simpson_R(int a, int b, int n)
 		if (i == 0 || i == n)
 			s = s + (h / 3) * (3 * xi + 4);
 
-		else if (i % 2 == 1)
+		else if (i % 2 == 0)
 			s = s + (h / 3) * (2 * (3 * xi + 4));
 		else 	s = s + (h / 3) * (4 * (3 * xi + 4));
 
